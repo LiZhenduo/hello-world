@@ -1,0 +1,113 @@
+python testBlocks.py --batch-size 1 --cfg cfg/yolov3.cfg --weights weights/yolov3.weights --save-json
+Namespace(batch_size=1, cfg='cfg/yolov3.cfg', conf_thres=0.001, data='data/coco.data', img_size=416, iou_thres=0.5, nms_thres=0.5, save_json=True, weights='weights/yolov3.weights')
+Using CUDA device0 _CudaDeviceProperties(name='TITAN X (Pascal)', total_memory=12184MB)
+           device1 _CudaDeviceProperties(name='TITAN X (Pascal)', total_memory=12189MB)
+
+                         Class    Images   Targets         P         R       mAP        F1: 100%|████████████████████████████████████| 5000/5000 [27:58<00:00,  2.98it/s]
+                           all     5e+03  3.58e+04    0.0934     0.761     0.559     0.162
+                        person     5e+03  1.09e+04     0.128     0.864     0.733     0.222
+                       bicycle     5e+03       316    0.0515     0.737     0.528    0.0962
+                           car     5e+03  1.67e+03    0.0633     0.832     0.619     0.118
+                    motorcycle     5e+03       391     0.136     0.793     0.675     0.232
+                      airplane     5e+03       131      0.18     0.901     0.833       0.3
+                           bus     5e+03       261     0.165     0.889      0.82     0.279
+                         train     5e+03       212     0.159     0.849     0.813     0.268
+                         truck     5e+03       352     0.101     0.662     0.483     0.175
+                          boat     5e+03       475      0.07     0.684     0.453     0.127
+                 traffic light     5e+03       516    0.0361     0.795     0.534     0.069
+                  fire hydrant     5e+03        83     0.149     0.904     0.853     0.256
+                     stop sign     5e+03        84    0.0674     0.905     0.805     0.125
+                 parking meter     5e+03        59    0.0552     0.678     0.609     0.102
+                         bench     5e+03       473     0.028     0.641     0.355    0.0537
+                          bird     5e+03       469    0.0415     0.633     0.465    0.0779
+                           cat     5e+03       195     0.231     0.877     0.796     0.366
+                           dog     5e+03       223     0.155      0.87     0.754     0.263
+                         horse     5e+03       305     0.143     0.856     0.785     0.245
+                         sheep     5e+03       321      0.15     0.766     0.606     0.251
+                           cow     5e+03       384     0.166     0.693     0.559     0.268
+                      elephant     5e+03       284     0.252     0.894     0.849     0.393
+                          bear     5e+03        53     0.251     0.868     0.794      0.39
+                         zebra     5e+03       277     0.232      0.87     0.813     0.367
+                       giraffe     5e+03       170     0.228     0.918     0.875     0.366
+                      backpack     5e+03       384    0.0425     0.719     0.354    0.0802
+                      umbrella     5e+03       392    0.0697     0.809     0.605     0.128
+                       handbag     5e+03       483    0.0209     0.611     0.232    0.0403
+                           tie     5e+03       297    0.0417     0.822     0.564    0.0795
+                      suitcase     5e+03       310     0.136     0.768     0.527     0.232
+                       frisbee     5e+03       109    0.0981     0.835     0.772     0.176
+                          skis     5e+03       282     0.065     0.688     0.437     0.119
+                     snowboard     5e+03        92    0.0738      0.62     0.498     0.132
+                   sports ball     5e+03       236    0.0487     0.754     0.651    0.0915
+                          kite     5e+03       399      0.15     0.679     0.453     0.245
+                  baseball bat     5e+03       125     0.065     0.728     0.572     0.119
+                baseball glove     5e+03       139    0.0449     0.763     0.597    0.0847
+                    skateboard     5e+03       218    0.0787     0.844      0.75     0.144
+                     surfboard     5e+03       266    0.0693     0.816     0.671     0.128
+                 tennis racket     5e+03       183     0.101     0.836      0.75      0.18
+                        bottle     5e+03       966    0.0561      0.76     0.467     0.104
+                    wine glass     5e+03       366    0.0947     0.708     0.553     0.167
+                           cup     5e+03       897    0.0654     0.765     0.527      0.12
+                          fork     5e+03       234    0.0443     0.581      0.42    0.0824
+                         knife     5e+03       291    0.0357     0.598     0.312    0.0674
+                         spoon     5e+03       253    0.0243     0.621     0.259    0.0467
+                          bowl     5e+03       620    0.0653     0.774     0.489     0.121
+                        banana     5e+03       371    0.0675     0.674     0.331     0.123
+                         apple     5e+03       158    0.0293     0.696     0.182    0.0563
+                      sandwich     5e+03       160     0.106     0.675     0.454     0.184
+                        orange     5e+03       189    0.0438     0.582     0.255    0.0815
+                      broccoli     5e+03       332    0.0683     0.783      0.34     0.126
+                        carrot     5e+03       346    0.0428     0.702     0.196    0.0808
+                       hot dog     5e+03       164     0.107     0.537     0.433     0.178
+                         pizza     5e+03       224    0.0993     0.759     0.612     0.176
+                         donut     5e+03       237     0.105     0.675      0.41     0.182
+                          cake     5e+03       241     0.088     0.697     0.496     0.156
+                         chair     5e+03  1.62e+03     0.052     0.747      0.44    0.0973
+                         couch     5e+03       236     0.115     0.792     0.597     0.201
+                  potted plant     5e+03       431    0.0493     0.817     0.477     0.093
+                           bed     5e+03       195     0.157     0.836     0.695     0.264
+                  dining table     5e+03       634    0.0584     0.803     0.485     0.109
+                        toilet     5e+03       179     0.212     0.911      0.82     0.344
+                            tv     5e+03       257     0.105     0.914     0.768     0.189
+                        laptop     5e+03       237     0.145     0.848     0.724     0.247
+                         mouse     5e+03        95    0.0636     0.884     0.756     0.119
+                        remote     5e+03       241    0.0496     0.784     0.491    0.0933
+                      keyboard     5e+03       117    0.0796     0.872     0.691     0.146
+                    cell phone     5e+03       291    0.0218     0.663     0.419    0.0422
+                     microwave     5e+03        88     0.145     0.864     0.731     0.248
+                          oven     5e+03       142    0.0816     0.782     0.555     0.148
+                       toaster     5e+03        11    0.0879     0.727     0.186     0.157
+                          sink     5e+03       211    0.0486     0.829     0.582    0.0918
+                  refrigerator     5e+03       107    0.0854     0.907     0.742     0.156
+                          book     5e+03  1.08e+03    0.0464     0.628     0.172    0.0864
+                         clock     5e+03       292    0.0533      0.88     0.756     0.101
+                          vase     5e+03       353    0.0671     0.765     0.552     0.123
+                      scissors     5e+03        56    0.0354     0.768     0.415    0.0677
+                    teddy bear     5e+03       245     0.167     0.804     0.625     0.276
+                    hair drier     5e+03        11    0.0274     0.182    0.0968    0.0476
+                    toothbrush     5e+03        77    0.0317     0.649     0.343    0.0605
+loading annotations into memory...
+Done (t=6.18s)
+creating index...
+index created!
+Loading and preparing results...
+DONE (t=2.65s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=52.71s).
+Accumulating evaluation results...
+DONE (t=8.25s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.323
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.572
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.328
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.173
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.346
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.449
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.277
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.426
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.452
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.290
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.481
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.577
+
